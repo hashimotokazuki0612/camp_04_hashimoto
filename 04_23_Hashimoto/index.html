@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,">
+<title>PET HOUSE</title>
+<!-- BootstrapのCSS読み込み -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- CSSファイル読み込み -->
+<link rel="stylesheet" href="style.css">
+
+<!--自作CSS開始-->
+<style type="text/css">
+.jumbotron {
+    background: url("img/sp-column25_mv.jpg") no-repeat;
+    background-size: cover;
+}
+</style>
+<!--自作CSS終了-->
+</head>
+
+<body>
+<!--ヘッダー開始-->
+<header id="header">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <a class="navbar-brand" href="#">PET HOUSE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">ログイン</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="select2.php">登録一覧</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">迷子の子を探す</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0" action="sns3.php" method="post">
+        <p style="color: white">兄妹を探してみよう！</p>
+        <input class="form-control mr-sm-2" type="text" name="s" placeholder="一胎子登録番号を入力" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >検索</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<!--ヘッダー終了--> 
+
+<!--メイン開始-->
+<main role="main"> 
+  <!--トップイメージ開始-->
+  <div class="jumbotron">
+    <h1 class="display-4">PET HOUSE</h1>
+    <p class="lead">このサイトは自分が飼っているペットの兄妹を探したい人、行方不明になっているペットを探している人のために開設しました。 <br>
+      ここから、新たな『つながり（絆）』が生まれると嬉しいです。</p>
+    <hr class="my-4">
+    <p>さあ、あなたの大事な家族の血統書をまずは登録しましょう。</p>
+    <a class="btn btn-primary btn-lg" href="index2.php" role="button">登録する</a> </div>
+  <!--トップイメージ終了--> 
+  
+  <!-- メインコンテンツ開始 -->
+  <div class="container marketing">
+    <div class="row"> 
+      <!-- メインコンテンツ０１開始 -->
+      <div class="col-lg-4"> <img src="img/puppies-2243686_640.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140" >
+        <h2>きょうだいを探す</h2>
+        <p>人見知りのわんちゃんも兄妹とであれば、仲良くなるのに時間はあまり掛からないそうです。あなたの大切なペットの本当の家族を探してみませんか。</p>
+        <p><a class="btn btn-secondary" href="select2.php" role="button">More &raquo;</a></p>
+      </div>
+      <!-- メインコンテンツ０１終了 --> 
+      
+      <!-- メインコンテンツ０２開始 -->
+      <div class="col-lg-4"> <img src="img/puppy640.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140" >
+        <h2>迷子リスト</h2>
+        <p>施設などで保護されているワンちゃんの登録リストです。<br>
+          ペットが失踪した時など、血統書のIDを元に探すことができます。</p>
+        <p><a class="btn btn-secondary" href="#" role="button">More &raquo;</a></p>
+      </div>
+      <!-- メインコンテンツ０２終了 --> 
+      
+      <!-- メインコンテンツ０３開始 -->
+      <div class="col-lg-4"> <img src="img/men-2425121_640.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140" >
+        <h2>コミュニティー</h2>
+        <p>ペットについて相談したいけど、相談相手がいない。一緒に散歩したりお茶できる仲間がいたら・・・。そんな方達のための掲示板です。ここで新たな輪が広がると嬉しいです。</p>
+        <p><a class="btn btn-secondary" href="#" role="button">More &raquo;</a></p>
+      </div>
+      <!-- メインコンテンツ０３終了 --> 
+    </div>
+    <!-- メインコンテンツ終了 --> 
+    
+    <!-- サブ・コンテンツ開始 -->
+    <hr class="featurette-divider">
+    <!--仕切り線--> 
+    <!--サブ・コンテンツ０１開始-->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5" id="slide">
+        <ul>
+          <li><img src="img/pets01.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"></li>
+          <li><img src="img/friends-3042751_1920.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"></li>
+          <li><img src="img/shiba-inu-3846767_640.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"></li>
+        </ul>
+      </div>
+    </div>
+    <!--サブ・コンテンツ０１終了-->
+    
+    <hr class="featurette-divider"><!--仕切り線-->
+    
+    <!--サブ・コンテンツ０２開始-->
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 order-md-1"> <img src="img/friends-1149841_1920.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="450" height="500"> </div>
+    </div>
+    <!--サブ・コンテンツ０２終了-->
+    
+    <hr class="featurette-divider">
+    <!--仕切り線--> 
+    <!--サブ・コンテンツ０３開始-->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5"> <img src="img/golden-retriever-2288933_1920.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"> </div>
+    </div>
+    <!--サブ・コンテンツ０３終了-->
+    
+    <hr class="featurette-divider">
+    <!--仕切り線--> 
+  </div>
+  <!--サブ・コンテンツ終了--> 
+  
+  <!-- ページスクロールボタン -->
+  <p id="page-top"><a href="#header">PAGE TOP</a></p>
+  
+  <!-- フッター開始 -->
+  <footer class="container">
+    <div class="container" style="text-align: center;">
+      <p>&copy; copyrights 2019 G`s Academy Tokyo All RIghts Reserved.</p>
+    </div>
+  </footer>
+  <!-- フッター終了 --> 
+</main>
+
+<!-- jQueryの読み込み --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="index.js"></script>
+</body>
+</html>
